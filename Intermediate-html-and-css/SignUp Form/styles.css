@@ -1,0 +1,157 @@
+@font-face {
+  font-family: Norse-font;
+  src: url(./assets/Norse-Bold.otf);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #0e0e0e;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-family: Norse-font, sans-serif;
+  font-size: 90px;
+  color: #ffffff;
+  padding-top: 20px;
+}
+
+.container {
+  display: flex;
+  width: 67%;
+  height: 100vh;
+}
+
+.left-section {
+  background: url("./assets/background.jpg") no-repeat;
+  background-size: cover;
+  position: relative;
+  flex: 1;
+}
+
+.logo {
+  position: absolute;
+  top: 200px;
+  display: flex;
+  height: 140px;
+  width: 100%;
+  background-color: rgba(8, 7, 1, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  height: 120px;
+  width: auto;
+}
+
+.right-section {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  background-color: #f9fafb;
+}
+
+.right-section > div {
+  padding-left: 30px;
+}
+
+.header p {
+  width: 70%;
+  color: #1f2937;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.header > :first-child {
+  margin-top: 100px;
+}
+
+.header > :last-child {
+  margin: 40px 0;
+}
+
+.signup-form {
+  background-color: white;
+  box-shadow: 0 8px 5px -5px #d3d3d3;
+}
+
+.signup-form p {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.footer p {
+  margin-bottom: 100px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #596d48;
+  font-weight: bold;
+}
+
+button {
+  color: white;
+  font-weight: bold;
+  background-color: #596d48;
+  border-radius: 4px;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 150px;
+  box-shadow: 2px 2px 1px #e9eaeb;
+}
+
+form label {
+  font-size: 10px;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 5px;
+}
+
+label,
+input {
+  display: flex;
+}
+
+form {
+  width: 70%;
+  display: flex;
+}
+
+form .left {
+  margin-right: 70px;
+}
+
+form input {
+  border-radius: 4px;
+  border: 1px solid gray;
+  margin-bottom: 20px;
+  background-color: #fffefe;
+  font-size: 15px;
+}
+
+input:focus {
+  border-color: blue;
+  box-shadow: 2px 2px 1px 0.2px #d3d3d3;
+  outline: none;
+}
+
+input:invalid {
+  border-color: red;
+}
